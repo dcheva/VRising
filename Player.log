@@ -3501,3 +3501,1063 @@ Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
 Unity.Entities.ComponentSystem:Update()
 UnityEngine.Events.UnityAction:Invoke()
 
+[Client] Request Load Chunk 9,10, SceneType 1, GUID: f154d0c7a74fef146aeebe3926b9b4bc
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 14,1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Unloaded Chunk 14,1. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Loaded Chunk 9,10, SceneType 1
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:07:24
+[Client FPS] Average: 49, median: 50, min: 45, max: 50
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 7.139838, median: 6.6649, min: 5.5459, max: 17.4689
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 48, median: 49, min: 42, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 250, median: 250, min: 250, max: 250
+[Network messages max bytes/s received] Average: 871, median: 986, min: 480, max: 1000
+[Sound CPU usage] Average: 4.717899, median: 4.557844, min: 3.974835, max: 5.753516 ms
+[Sound memory usage] Average: 317, median: 317, min: 317, max: 318 mb
+[Hybrid models active] Average: 4, median: 5, min: 2, max: 8
+[Hour of day] 3
+[Memory mb] Average: 1965
+[Client entity counts] Enabled: 47113, disabled: 23730, total: 70843
+[Server entity counts] Enabled: 41649, disabled: 308977, total: 350626
+[Archetype count] 7583
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 10,9, SceneType 1, GUID: 42d38f8f591020f47a8542b927f35a82
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 7,8
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Unloaded Chunk 7,8. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Loaded Chunk 10,9, SceneType 1
+[Client] Request Load Chunk 10,8, SceneType 1, GUID: ab9a72e9e00caee43b9e8c3e96f8731b
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 8,9
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Unloaded Chunk 8,9. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Loaded Chunk 10,8, SceneType 1
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:09:24
+[Client FPS] Average: 47, median: 50, min: 27, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 7.415071, median: 6.7997, min: 5.5616, max: 24.0711
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 47, median: 49, min: 38, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 35
+[Network messages max bytes/s sent] Average: 248, median: 250, min: 241, max: 252
+[Network messages max bytes/s received] Average: 877, median: 988, min: 622, max: 999
+[Sound CPU usage] Average: 7.794747, median: 7.402316, min: 6.37053, max: 11.79424 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 319 mb
+[Hybrid models active] Average: 10, median: 11, min: 8, max: 12
+[Hour of day] 6
+[Memory mb] Average: 1967
+[Client entity counts] Enabled: 43084, disabled: 28310, total: 71394
+[Server entity counts] Enabled: 42167, disabled: 308763, total: 350930
+[Archetype count] 7711
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Server Info list downloaded!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:UpdateOfficialServersList()
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loaded Servers Info List - Official: 1091, Trusted: 3, Banned: 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:UpdateOfficialServersList()
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:11:24
+[Client FPS] Average: 49, median: 50, min: 48, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 30
+[Client SLS frametime ms] Average: 6.916717, median: 6.4511, min: 5.3823, max: 18.3738
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 49, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 242, median: 241, min: 241, max: 250
+[Network messages max bytes/s received] Average: 561, median: 497, min: 407, max: 985
+[Sound CPU usage] Average: 6.170539, median: 6.078092, min: 5.045251, max: 7.676788 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 319 mb
+[Hybrid models active] Average: 4, median: 5, min: 4, max: 6
+[Hour of day] 9
+[Memory mb] Average: 1977
+[Client entity counts] Enabled: 43924, disabled: 30565, total: 74489
+[Server entity counts] Enabled: 42613, disabled: 308334, total: 350947
+[Archetype count] 7821
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 8,9, SceneType 1, GUID: 24ef0792343cd704bb2a35f3894100de
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 10,8
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Unloaded Chunk 10,8. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Loaded Chunk 8,9, SceneType 1
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:13:24
+[Client FPS] Average: 49, median: 50, min: 49, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 6.484016, median: 5.9437, min: 4.8685, max: 13.78
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 49, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 242, median: 241, min: 241, max: 250
+[Network messages max bytes/s received] Average: 433, median: 427, min: 289, max: 648
+[Sound CPU usage] Average: 4.358813, median: 4.382922, min: 3.658273, max: 5.026043 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 1, median: 1, min: 1, max: 1
+[Hour of day] 11
+[Memory mb] Average: 1988
+[Client entity counts] Enabled: 46221, disabled: 34514, total: 80735
+[Server entity counts] Enabled: 41454, disabled: 309345, total: 350799
+[Archetype count] 7952
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Default Scale Set for Wilderness: 0,1985294
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.MapMenuMapper:GetZoneOffsetAndScale(WorldZone, Single)
+ProjectM.UI.MapMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientPresentationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:15:24
+[Client FPS] Average: 49, median: 50, min: 46, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 7.262327, median: 6.8874, min: 5.5291, max: 22.5188
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 46, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 32
+[Network messages max bytes/s sent] Average: 248, median: 250, min: 241, max: 250
+[Network messages max bytes/s received] Average: 772, median: 701, min: 574, max: 1000
+[Sound CPU usage] Average: 7.065498, median: 6.852664, min: 4.865569, max: 10.21724 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 8, median: 10, min: 3, max: 11
+[Hour of day] 14
+[Memory mb] Average: 1993
+[Client entity counts] Enabled: 48356, disabled: 35552, total: 83908
+[Server entity counts] Enabled: 41991, disabled: 308674, total: 350665
+[Archetype count] 8019
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:17:24
+[Client FPS] Average: 50, median: 50, min: 49, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 6.655678, median: 6.1781, min: 5.2619, max: 14.1391
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 49, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 241, median: 241, min: 241, max: 250
+[Network messages max bytes/s received] Average: 443, median: 460, min: 377, max: 472
+[Sound CPU usage] Average: 5.698831, median: 5.670333, min: 5.085454, max: 6.584534 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 7, median: 8, min: 7, max: 9
+[Hour of day] 17
+[Memory mb] Average: 1993
+[Client entity counts] Enabled: 48504, disabled: 35913, total: 84417
+[Server entity counts] Enabled: 41757, disabled: 308798, total: 350555
+[Archetype count] 8024
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 10,8, SceneType 1, GUID: ab9a72e9e00caee43b9e8c3e96f8731b
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 8,9
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Unloaded Chunk 8,9. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Loaded Chunk 10,8, SceneType 1
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:19:24
+[Client FPS] Average: 50, median: 50, min: 48, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 7.000031, median: 6.5858, min: 5.573, max: 19.0593
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 49, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 32
+[Network messages max bytes/s sent] Average: 244, median: 243, min: 241, max: 252
+[Network messages max bytes/s received] Average: 862, median: 991, min: 324, max: 1000
+[Sound CPU usage] Average: 5.688715, median: 5.725145, min: 4.89952, max: 6.407448 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 1, median: 1, min: 1, max: 2
+[Hour of day] 19
+[Memory mb] Average: 1997
+[Client entity counts] Enabled: 44985, disabled: 35598, total: 80583
+[Server entity counts] Enabled: 42106, disabled: 308313, total: 350419
+[Archetype count] 8131
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:21:24
+[Client FPS] Average: 46, median: 48, min: 27, max: 50
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 6.788404, median: 6.5175, min: 5.72, max: 15.6924
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 46, median: 47, min: 32, max: 49
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 34
+[Network messages max bytes/s sent] Average: 249, median: 249, min: 249, max: 249
+[Network messages max bytes/s received] Average: 346, median: 301, min: 268, max: 667
+[Sound CPU usage] Average: 4.33839, median: 4.287298, min: 3.608985, max: 5.236032 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 2, median: 3, min: 2, max: 3
+[Hour of day] 22
+[Memory mb] Average: 1999
+[Client entity counts] Enabled: 43686, disabled: 36854, total: 80540
+[Server entity counts] Enabled: 41613, disabled: 308796, total: 350409
+[Archetype count] 8136
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:23:24
+[Client FPS] Average: 49, median: 50, min: 46, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 7.586846, median: 7.2558, min: 5.1955, max: 21.9616
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 48, median: 49, min: 47, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 249, median: 249, min: 241, max: 258
+[Network messages max bytes/s received] Average: 357, median: 352, min: 317, max: 410
+[Sound CPU usage] Average: 5.062532, median: 5.158133, min: 3.897419, max: 6.320226 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 3, median: 3, min: 3, max: 3
+[Hour of day] 1
+[Memory mb] Average: 2001
+[Client entity counts] Enabled: 43616, disabled: 36902, total: 80518
+[Server entity counts] Enabled: 41342, disabled: 308853, total: 350195
+[Archetype count] 8154
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.Presentation.WallpaperSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[ line -80815048]
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Server Info list downloaded!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:UpdateOfficialServersList()
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loaded Servers Info List - Official: 1091, Trusted: 3, Banned: 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:UpdateOfficialServersList()
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:25:24
+[Client FPS] Average: 48, median: 49, min: 48, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 8.218814, median: 7.7903, min: 6.5933, max: 20.2874
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 48, median: 48, min: 47, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 246, median: 250, min: 241, max: 250
+[Network messages max bytes/s received] Average: 397, median: 416, min: 308, max: 490
+[Sound CPU usage] Average: 5.830376, median: 5.839514, min: 4.866998, max: 7.118339 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 3, median: 3, min: 3, max: 4
+[Hour of day] 3
+[Memory mb] Average: 2001
+[Client entity counts] Enabled: 44041, disabled: 36524, total: 80565
+[Server entity counts] Enabled: 41626, disabled: 308677, total: 350303
+[Archetype count] 8224
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Current building preview did not match the expected TileModel PrefabGuid!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.UI.BuildMenuMapper:DoInputs(Entity, ObjectEditOptions, BuildMenuPlacementOperation, Boolean, Entity, Entity, Boolean, PrefabGUID, Boolean, Boolean)
+ProjectM.UI.BuildMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:27:24
+[Client FPS] Average: 49, median: 50, min: 48, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 8.324213, median: 8.2184, min: 5.3797, max: 14.952
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 48, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 249, median: 249, min: 249, max: 249
+[Network messages max bytes/s received] Average: 350, median: 336, min: 310, max: 579
+[Sound CPU usage] Average: 4.527961, median: 4.524179, min: 3.932697, max: 5.454866 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 6, median: 7, min: 6, max: 7
+[Hour of day] 6
+[Memory mb] Average: 2004
+[Client entity counts] Enabled: 44110, disabled: 36538, total: 80648
+[Server entity counts] Enabled: 41683, disabled: 308698, total: 350381
+[Archetype count] 8365
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:29:24
+[Client FPS] Average: 49, median: 50, min: 49, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 7.606144, median: 7.3435, min: 5.8162, max: 14.3181
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 49, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 249, median: 249, min: 249, max: 258
+[Network messages max bytes/s received] Average: 574, median: 567, min: 517, max: 678
+[Sound CPU usage] Average: 4.713065, median: 4.867247, min: 3.594957, max: 5.863605 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 9, median: 9, min: 9, max: 10
+[Hour of day] 9
+[Memory mb] Average: 2004
+[Client entity counts] Enabled: 44144, disabled: 36545, total: 80689
+[Server entity counts] Enabled: 41808, disabled: 308696, total: 350504
+[Archetype count] 8370
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:31:24
+[Client FPS] Average: 49, median: 50, min: 49, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 8.068967, median: 7.6993, min: 6.7513, max: 16.3916
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 48, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 30, max: 31
+[Network messages max bytes/s sent] Average: 251, median: 249, min: 241, max: 258
+[Network messages max bytes/s received] Average: 409, median: 388, min: 352, max: 587
+[Sound CPU usage] Average: 5.251256, median: 5.246571, min: 4.391417, max: 6.143583 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 10, median: 10, min: 10, max: 11
+[Hour of day] 11
+[Memory mb] Average: 2006
+[Client entity counts] Enabled: 43811, disabled: 36858, total: 80669
+[Server entity counts] Enabled: 41595, disabled: 308939, total: 350534
+[Archetype count] 8395
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:33:24
+[Client FPS] Average: 49, median: 50, min: 49, max: 50
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 7.763785, median: 7.7881, min: 5.6325, max: 17.3815
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 48, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 252, median: 249, min: 249, max: 258
+[Network messages max bytes/s received] Average: 401, median: 402, min: 364, max: 461
+[Sound CPU usage] Average: 5.526781, median: 5.425591, min: 4.635021, max: 6.932433 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 10, median: 10, min: 9, max: 11
+[Hour of day] 14
+[Memory mb] Average: 2008
+[Client entity counts] Enabled: 43778, disabled: 36865, total: 80643
+[Server entity counts] Enabled: 41650, disabled: 308845, total: 350495
+[Archetype count] 8395
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:35:24
+[Client FPS] Average: 49, median: 49, min: 48, max: 50
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 8.156569, median: 7.904, min: 6.0181, max: 21.6622
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 49, min: 48, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 30, max: 31
+[Network messages max bytes/s sent] Average: 245, median: 241, min: 241, max: 258
+[Network messages max bytes/s received] Average: 384, median: 377, min: 360, max: 441
+[Sound CPU usage] Average: 5.240427, median: 5.22681, min: 4.360842, max: 6.307523 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 8, median: 9, min: 8, max: 9
+[Hour of day] 17
+[Memory mb] Average: 2010
+[Client entity counts] Enabled: 44227, disabled: 36421, total: 80648
+[Server entity counts] Enabled: 42131, disabled: 308670, total: 350801
+[Archetype count] 8461
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+OnApplicationQuit()
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameBootstrap:OnApplicationQuit()
+
+SaveOnExit() - No Server World
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameBootstrap:SaveOnExit()
+ProjectM.GameBootstrap:SaveAndShutdownServer()
+
+Destroy Canvas: HUDCanvas(Clone) (UnityEngine.GameObject)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UISpawningSystem:OnDestroy()
+Unity.Entities.World:DestroyAllSystemsAndLogException()
+Unity.Entities.World:Dispose()
+ProjectM.CustomWorld:Dispose()
+ProjectM.ClientWorldManager:DestroyClientWorlds()
+ProjectM.GameBootstrap:SaveAndShutdownServer()
+
+ClientBootstrapSystem.OnDestroy
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.ClientBootstrapSystem:OnDestroy()
+Unity.Entities.World:DestroyAllSystemsAndLogException()
+Unity.Entities.World:Dispose()
+ProjectM.CustomWorld:Dispose()
+ProjectM.ClientWorldManager:DestroyClientWorlds()
+ProjectM.GameBootstrap:SaveAndShutdownServer()
+
+ClientSteamTransport.Shutdown - ConnectionState = k_ESteamNetworkingConnectionState_Connected
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Stunlock.Network.Steam.ClientSteamTransportLayer:Shutdown(ConnectionStatusChangeReason)
+ProjectM.ClientBootstrapSystem:OnDestroy()
+Unity.Entities.World:DestroyAllSystemsAndLogException()
+Unity.Entities.World:Dispose()
+ProjectM.CustomWorld:Dispose()
+ProjectM.ClientWorldManager:DestroyClientWorlds()
+ProjectM.GameBootstrap:SaveAndShutdownServer()
+
+[Client_0] Disposing RuntimeConversion (with BlobAssetStore)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.RuntimeConversionSystem:OnDestroy()
+Unity.Entities.World:DestroyAllSystemsAndLogException()
+Unity.Entities.World:Dispose()
+ProjectM.CustomWorld:Dispose()
+ProjectM.ClientWorldManager:DestroyClientWorlds()
+ProjectM.GameBootstrap:SaveAndShutdownServer()
+
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 212c -> priority: 1 
+  Thread -> id: 19f4 -> priority: 1 
+  Thread -> id: a5c -> priority: 1 
+OnDestroy()
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameBootstrap:OnDestroy()
+
+Destroy Canvas: null
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UISpawningSystem:OnDestroy()
+Unity.Entities.World:DestroyAllSystemsAndLogException()
+Unity.Entities.World:Dispose()
+Unity.Entities.World:DisposeAllWorlds()
+Unity.Entities.DefaultWorldInitialization:DomainUnloadOrPlayModeChangeShutdown()
+
+[Default World] Disposing RuntimeConversion (with BlobAssetStore)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.RuntimeConversionSystem:OnDestroy()
+Unity.Entities.World:DestroyAllSystemsAndLogException()
+Unity.Entities.World:Dispose()
+Unity.Entities.World:DisposeAllWorlds()
+Unity.Entities.DefaultWorldInitialization:DomainUnloadOrPlayModeChangeShutdown()
+
