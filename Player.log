@@ -1,0 +1,433 @@
+Initialize engine version: 2020.3.31f1 (6b54b7616050)
+[Subsystems] Discovering subsystems at path C:/Games/V Rising/VRising_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:   
+    VRAM:     5992 MB
+    Driver:   31.0.15.1748
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.848300 ms
+Bootstrap - Time: 2022-11-02 17:27:59, Version: VRising v0.5.42584 (2022-07-07 11:14 UTC) (Release)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+SLS_COLLECTIONS_CHECKS defined.
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+System Information:
+processorFrequency: 3696
+deviceModel: System Product Name (System manufacturer)
+operatingSystem: Windows 10  (10.0.19044) 64bit
+processorType: Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz
+processorCount: 6
+systemMemorySize: 16302
+graphicsDeviceName: NVIDIA GeForce GTX 1660
+graphicsDeviceType: Direct3D11
+graphicsDeviceVendor: NVIDIA
+graphicsDeviceVendorID: 4318
+graphicsDeviceVersion: Direct3D 11.0 [level 11.1]
+graphicsMemorySize: 5992
+graphicsMultiThreaded: False
+graphicsShaderLevel: 50
+maxTextureSize: 16384
+CPU Score: 11088 (WOW)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+Loaded ClientSettings:
+{
+  "General": {
+    "ServerPath": "VRising_Server/VRisingServer.exe",
+    "PlatformNotificationPosition": 2,
+    "NewsURL": "https://client.vrising.net/live/news.json",
+    "OfficialServersURL": "https://client.vrising.net/live/official.txt",
+    "BannedServersURL": "https://client.vrising.net/live/banned.txt",
+    "ServerInfoURL": "https://client.vrising.net/live/server-info.txt",
+    "ServerPartnerURL": "https://www.g-portal.com/vrising",
+    "ServerInstuctionsURL": "https://github.com/StunlockStudios/vrising-dedicated-server-instructions",
+    "BranchOverride": "",
+    "EnableConsole": false,
+    "ConfineCursorToWindow": false
+  },
+  "Sound": {
+    "Threaded": true,
+    "DisableAllSounds": false,
+    "DisableMusic": false,
+    "MonoSound": false,
+    "SoundInBackground": true,
+    "UsePushToTalk": true,
+    "VOIPAutojoin": true,
+    "Driver": "",
+    "MasterVolume": 1.0,
+    "MusicVolume": 1.0,
+    "SoundEffectsVolume": 1.0,
+    "AmbienceVolume": 1.0,
+    "VoiceOverVolume": 1.0,
+    "UIVolume": 1.0,
+    "VOIPVolume": 0.66
+  },
+  "Interface": {
+    "Language": null,
+    "VideoPlayMode": 0,
+    "SteamerMode": false,
+    "ShowGlobalChat": true,
+    "ShowChatTimeStamps": true,
+    "LockMinimapRotation": true,
+    "BuildMenuFadeOut": false,
+    "ShowMenuShortcuts": true,
+    "ChatSize": 16.0,
+    "SteamRichPresenceEnabled": true,
+    "ToggleEquipMode": true,
+    "AllowFriendsToJoinThroughSteam": true
+  },
+  "GameClient": {
+    "UserName": "",
+    "SavedCharacterName": "",
+    "RecordClientReplay": false,
+    "PlayLatestClientReplay": false,
+    "EnableGameAnalytics": true,
+    "AnalyticsEnvironment": "production",
+    "CompletedTutorials": 0,
+    "MaximumHandshakeAttempts": 10,
+    "ConnectionTimeout": 30.0,
+    "BetaInformationURL": null,
+    "ServerListURL": "",
+    "HasSeenCinematic": false,
+    "HasCompletedFirstStartup": false,
+    "EnableDebugLogsOverlayByDefault": false,
+    "ServerName": "VRising Server",
+    "DiscoverLocalPeers": false,
+    "HideWrongVersion": true,
+    "HideFullServers": false,
+    "NetworkVersionOverride": -1
+  },
+  "GraphicSettings": {
+    "Resolution": {
+      "x": 0,
+      "y": 0
+    },
+    "FPSLimitValue": 60,
+    "DynamicResolutionQuality": 1.0,
+    "ScreenShakeAmplitude": 1.0,
+    "Brightness": 2.2,
+    "FsrSharpness": 1.0,
+    "FsrQualityMode": 1,
+    "ClothUpdateRate": 1,
+    "ClothQuality": 0,
+    "AntiAliasing": 2,
+    "ShadowQuality": 0,
+    "AmbientOcclusionQuality": 0,
+    "BloomQuality": 0,
+    "VolumetricsQuality": 0,
+    "TextureQuality": 0,
+    "WindowMode": 1,
+    "CurrentPresetMode": 0,
+    "MenuFPSCapMode": 2,
+    "VerticalSync": true,
+    "ShouldLimitFPS": false,
+    "MotionBlur": true,
+    "DepthOfField": true,
+    "HighQualityVegetation": true,
+    "HighQualityAtmosphere": true,
+    "BloodEffectsEnabled": true
+  }
+}
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SettingsManager:get_ClientSettings()
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+Bootstrapping World: Default World
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+ProjectM.ClientDebugSettings - Error while trying to load settings from file. File not Found! (C:/Games/V Rising/VRising_Data/StreamingAssets\Settings\ClientDebugSettings.json)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.Shared.SettingsBase:TryLoadJsonFile(String, Boolean, Boolean)
+ProjectM.Shared.SettingsBase:.ctor(String, Boolean, Boolean)
+ProjectM.ClientDebugSettingsSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+SteamPlatformSystem - Entering OnCreate!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+Loaded VersionDataSettings:
+{
+  "NetworkVersion": 1,
+  "PersistenceVersion": 1
+}
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SettingsManager:get_VersionData()
+GameVersionUtils:TryInitializePersistenceVersion()
+GameVersionUtils:GetOrLoadPersistenceVersion()
+ProjectM.ServerRuntimeSettings:GetStandardSaveRoot(UInt64)
+ProjectM.SettingsManager:VerifyServerSettings()
+ProjectM.SettingsManager:get_ServerHostSettings()
+ProjectM.Auth.SteamPlatformSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+PersistenceVersionOverride value found from VersionDataSettings: 1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameVersionUtils:TryInitializePersistenceVersion()
+GameVersionUtils:GetOrLoadPersistenceVersion()
+ProjectM.ServerRuntimeSettings:GetStandardSaveRoot(UInt64)
+ProjectM.SettingsManager:VerifyServerSettings()
+ProjectM.SettingsManager:get_ServerHostSettings()
+ProjectM.Auth.SteamPlatformSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+Persistence Version initialized as: 1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameVersionUtils:TryInitializePersistenceVersion()
+GameVersionUtils:GetOrLoadPersistenceVersion()
+ProjectM.ServerRuntimeSettings:GetStandardSaveRoot(UInt64)
+ProjectM.SettingsManager:VerifyServerSettings()
+ProjectM.SettingsManager:get_ServerHostSettings()
+ProjectM.Auth.SteamPlatformSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+Loaded ServerHostSettings:
+{
+  "Name": "V Rising Server",
+  "Description": "",
+  "Port": 9876,
+  "QueryPort": 9877,
+  "Address": null,
+  "MaxConnectedUsers": 40,
+  "MaxConnectedAdmins": 4,
+  "MinFreeSlotsNeededForNewUsers": 0,
+  "ServerFps": 30,
+  "AIUpdatesPerFrame": 200,
+  "Password": "",
+  "Secure": false,
+  "ListOnMasterServer": true,
+  "ServerBranch": "",
+  "GameSettingsPreset": "",
+  "SaveName": "world1",
+  "AutoSaveCount": 25,
+  "AutoSaveInterval": 600,
+  "PersistenceDebuggingEnabled": false,
+  "GiveStarterItems": false,
+  "LogAllNetworkEvents": false,
+  "LogAdminEvents": true,
+  "LogDebugEvents": true,
+  "AdminOnlyDebugEvents": true,
+  "EveryoneIsAdmin": false,
+  "DisableDebugEvents": false,
+  "EnableDangerousDebugEvents": false,
+  "TrackArchetypeCreationsOnStartup": false,
+  "ServerStartTimeOffset": 0.0,
+  "NetworkVersionOverride": -1,
+  "PersistenceVersionOverride": -1,
+  "LanMode": false,
+  "LowerFPSWhenEmpty": true,
+  "LowerFPSWhenEmptyValue": 1,
+  "UseTeleportPlayersOutOfCollisionFix": true,
+  "DiscoveryResponseLevel": 0,
+  "RemoteBansURL": "",
+  "RemoteAdminsURL": "",
+  "ResetDaysInterval": 0,
+  "DayOfReset": -1,
+  "API": {
+    "Enabled": false,
+    "BindAddress": "*",
+    "BindPort": 9090,
+    "BasePath": "/",
+    "AccessList": ""
+  },
+  "Rcon": {
+    "Enabled": false,
+    "BindAddress": null,
+    "Port": 25575,
+    "Password": "",
+    "TimeoutSeconds": 300,
+    "MaxPasswordTries": 99,
+    "BanMinutes": 0,
+    "SendAuthImmediately": true,
+    "MaxConnectionsPerIp": 20,
+    "MaxConnections": 20
+  }
+}
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SettingsManager:VerifyServerSettings()
+ProjectM.SettingsManager:get_ServerHostSettings()
+ProjectM.Auth.SteamPlatformSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+SteamPlatformSystem - Steamworks API initialization Succeeded!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:TryInitClient(PlatformInitState&)
+ProjectM.Auth.SteamPlatformSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+SteamPlatformSystem - Steam Info - AppID: 1604030, UserID: 76561199648137472, PersonaName: Noob, AppOwner: 76561199648137472
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:TryInitClient(PlatformInitState&)
+ProjectM.Auth.SteamPlatformSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+SteamPlatformSystem - Enabling Steam FilterText, Success: False
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:TryInitClient(PlatformInitState&)
+ProjectM.Auth.SteamPlatformSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+Setting sound card to default.
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Audio.StudioManagerSystem:SetDriver(Guid)
+ProjectM.Audio.StudioManagerSystem:InitializeSettings()
+ProjectM.Audio.StudioManagerSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
+Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
+Unity.Entities.AutomaticWorldBootstrap:Initialize()
+
+Entering UIEntryPoint!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UIEntryPoint:Awake()
+
+CommandLine: "C:\Games\V Rising\VRising.exe"
+
+C:\Games\V Rising\VRising.exe
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UIEntryPoint:Awake()
+
+This is a LIVE build! (debug ourput)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UIEntryPoint:Awake()
+
+JsonReaderException: Additional text encountered after finished reading JSON content: {. Path '', line 14568, position 1.
+  at Newtonsoft.Json.JsonTextReader.Read () [0x00000] in <00000000000000000000000000000000>:0 
+  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType, System.Boolean checkAdditionalContent) [0x00000] in <00000000000000000000000000000000>:0 
+  at Newtonsoft.Json.JsonSerializer.DeserializeInternal (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00000] in <00000000000000000000000000000000>:0 
+  at Newtonsoft.Json.JsonConvert.DeserializeObject (System.String value, System.Type type, Newtonsoft.Json.JsonSerializerSettings settings) [0x00000] in <00000000000000000000000000000000>:0 
+  at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value, Newtonsoft.Json.JsonSerializerSettings settings) [0x00000] in <00000000000000000000000000000000>:0 
+  at StunLocalization.LocalizationIO.ImportJson (System.String fileName, System.Collections.Generic.List`1[StunLocalization.LocalizationCode]& codes) [0x00000] in <00000000000000000000000000000000>:0 
+  at StunLocalization.Localization.LoadLocalization (System.String filePath) [0x00000] in <00000000000000000000000000000000>:0 
+  at StunLocalization.Localization.Initialize (StunLocalization.LocalizationSettings settings) [0x00000] in <00000000000000000000000000000000>:0 
+  at ProjectM.UI.InitializeUI.Awake () [0x00000] in <00000000000000000000000000000000>:0 
+
+Server Info list downloaded!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:UpdateOfficialServersList()
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.DisplaysUpdatedDelegate:Invoke()
+
+Loaded Servers Info List - Official: 1091, Trusted: 0, Banned: 1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:UpdateOfficialServersList()
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.DisplaysUpdatedDelegate:Invoke()
+
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 1e6c -> priority: 1 
+  Thread -> id: 1c88 -> priority: 1 
+  Thread -> id: 1754 -> priority: 1 
+[Default World] Disposing RuntimeConversion (with BlobAssetStore)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.RuntimeConversionSystem:OnDestroy()
+Unity.Entities.World:DestroyAllSystemsAndLogException()
+Unity.Entities.World:Dispose()
+Unity.Entities.World:DisposeAllWorlds()
+Unity.Entities.DefaultWorldInitialization:DomainUnloadOrPlayModeChangeShutdown()
+
