@@ -3464,3 +3464,40 @@ Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
 Unity.Entities.ComponentSystem:Update()
 UnityEngine.Events.UnityAction:Invoke()
 
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:05:24
+[Client FPS] Average: 49, median: 50, min: 49, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 6.5838, median: 6.0239, min: 4.9505, max: 17.9924
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 48, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 30, max: 31
+[Network messages max bytes/s sent] Average: 241, median: 241, min: 241, max: 241
+[Network messages max bytes/s received] Average: 474, median: 437, min: 400, max: 596
+[Sound CPU usage] Average: 3.796962, median: 3.734398, min: 3.185953, max: 4.664884 ms
+[Sound memory usage] Average: 317, median: 317, min: 317, max: 318 mb
+[Hybrid models active] Average: 1, median: 1, min: 1, max: 1
+[Hour of day] 1
+[Memory mb] Average: 1957
+[Client entity counts] Enabled: 45929, disabled: 16452, total: 62381
+[Server entity counts] Enabled: 41402, disabled: 308953, total: 350355
+[Archetype count] 7448
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
