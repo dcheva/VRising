@@ -4256,3 +4256,25 @@ Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
 Unity.Entities.ComponentSystem:Update()
 UnityEngine.Events.UnityAction:Invoke()
 
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 328 -> priority: 1 
+  Thread -> id: 750 -> priority: 1 
+  Thread -> id: 210c -> priority: 1 
+Destroy Canvas: null
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UISpawningSystem:OnDestroy()
+Unity.Entities.World:DestroyAllSystemsAndLogException()
+Unity.Entities.World:Dispose()
+Unity.Entities.World:DisposeAllWorlds()
+Unity.Entities.DefaultWorldInitialization:DomainUnloadOrPlayModeChangeShutdown()
+
+[Default World] Disposing RuntimeConversion (with BlobAssetStore)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.RuntimeConversionSystem:OnDestroy()
+Unity.Entities.World:DestroyAllSystemsAndLogException()
+Unity.Entities.World:Dispose()
+Unity.Entities.World:DisposeAllWorlds()
+Unity.Entities.DefaultWorldInitialization:DomainUnloadOrPlayModeChangeShutdown()
+
