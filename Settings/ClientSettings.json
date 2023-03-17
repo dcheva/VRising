@@ -1,0 +1,34 @@
+{
+  "General": {
+    "ConfineCursorToWindow": true
+  },
+  "Sound": {},
+  "Interface": {
+    "Language": "Russian",
+    "VideoPlayMode": 1,
+    "SteamRichPresenceEnabled": false,
+    "AllowFriendsToJoinThroughSteam": false
+  },
+  "GameClient": {
+    "EnableGameAnalytics": false,
+    "CompletedTutorials": 5183,
+    "HasSeenCinematic": true,
+    "HasCompletedFirstStartup": true
+  },
+  "GraphicSettings": {
+    "Resolution": {
+      "x": 1920,
+      "y": 1080
+    },
+    "DynamicResolutionQuality": 0.59,
+    "FsrQualityMode": 3,
+    "ClothUpdateRate": 2,
+    "ClothQuality": 1,
+    "ShadowQuality": 1,
+    "AmbientOcclusionQuality": 1,
+    "BloomQuality": 1,
+    "VolumetricsQuality": 1,
+    "TextureQuality": 1,
+    "CurrentPresetMode": 1
+  }
+}

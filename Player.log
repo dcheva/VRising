@@ -5,13 +5,13 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
     Vendor:   
-    VRAM:     5992 MB
-    Driver:   31.0.15.1748
+    VRAM:     5980 MB
+    Driver:   31.0.15.2824
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.848300 ms
-Bootstrap - Time: 2022-11-02 17:27:59, Version: VRising v0.5.42584 (2022-07-07 11:14 UTC) (Release)
+UnloadTime: 0.714800 ms
+Bootstrap - Time: 2023-03-17 17:39:24, Version: VRising v0.5.48238 (2023-01-24 00:45 UTC) (Release)
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
 ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
@@ -37,7 +37,7 @@ graphicsDeviceType: Direct3D11
 graphicsDeviceVendor: NVIDIA
 graphicsDeviceVendorID: 4318
 graphicsDeviceVersion: Direct3D 11.0 [level 11.1]
-graphicsMemorySize: 5992
+graphicsMemorySize: 5980
 graphicsMultiThreaded: False
 graphicsShaderLevel: 50
 maxTextureSize: 16384
@@ -59,9 +59,9 @@ Loaded ClientSettings:
     "ServerInfoURL": "https://client.vrising.net/live/server-info.txt",
     "ServerPartnerURL": "https://www.g-portal.com/vrising",
     "ServerInstuctionsURL": "https://github.com/StunlockStudios/vrising-dedicated-server-instructions",
-    "BranchOverride": "",
+    "BranchOverride": "default",
     "EnableConsole": false,
-    "ConfineCursorToWindow": false
+    "ConfineCursorToWindow": true
   },
   "Sound": {
     "Threaded": true,
@@ -81,8 +81,8 @@ Loaded ClientSettings:
     "VOIPVolume": 0.66
   },
   "Interface": {
-    "Language": null,
-    "VideoPlayMode": 0,
+    "Language": "Russian",
+    "VideoPlayMode": 1,
     "SteamerMode": false,
     "ShowGlobalChat": true,
     "ShowChatTimeStamps": true,
@@ -90,24 +90,25 @@ Loaded ClientSettings:
     "BuildMenuFadeOut": false,
     "ShowMenuShortcuts": true,
     "ChatSize": 16.0,
-    "SteamRichPresenceEnabled": true,
+    "SteamRichPresenceEnabled": false,
     "ToggleEquipMode": true,
-    "AllowFriendsToJoinThroughSteam": true
+    "AllowFriendsToJoinThroughSteam": false
   },
   "GameClient": {
     "UserName": "",
     "SavedCharacterName": "",
     "RecordClientReplay": false,
     "PlayLatestClientReplay": false,
-    "EnableGameAnalytics": true,
+    "EnableGameAnalytics": false,
     "AnalyticsEnvironment": "production",
+    "ClearCompletedTutorialsOnCharacterCreate": false,
     "CompletedTutorials": 0,
     "MaximumHandshakeAttempts": 10,
     "ConnectionTimeout": 30.0,
     "BetaInformationURL": null,
     "ServerListURL": "",
-    "HasSeenCinematic": false,
-    "HasCompletedFirstStartup": false,
+    "HasSeenCinematic": true,
+    "HasCompletedFirstStartup": true,
     "EnableDebugLogsOverlayByDefault": false,
     "ServerName": "VRising Server",
     "DiscoverLocalPeers": false,
@@ -117,11 +118,11 @@ Loaded ClientSettings:
   },
   "GraphicSettings": {
     "Resolution": {
-      "x": 0,
-      "y": 0
+      "x": 1920,
+      "y": 1080
     },
     "FPSLimitValue": 60,
-    "DynamicResolutionQuality": 1.0,
+    "DynamicResolutionQuality": 0.77,
     "ScreenShakeAmplitude": 1.0,
     "Brightness": 2.2,
     "FsrSharpness": 1.0,
@@ -188,7 +189,7 @@ Unity.Entities.AutomaticWorldBootstrap:Initialize()
 
 Loaded VersionDataSettings:
 {
-  "NetworkVersion": 1,
+  "NetworkVersion": 2,
   "PersistenceVersion": 1
 }
 UnityEngine.Logger:Log(LogType, Object)
@@ -262,6 +263,7 @@ Loaded ServerHostSettings:
   "SaveName": "world1",
   "AutoSaveCount": 25,
   "AutoSaveInterval": 600,
+  "ZipSaveFiles": false,
   "PersistenceDebuggingEnabled": false,
   "GiveStarterItems": false,
   "LogAllNetworkEvents": false,
@@ -276,7 +278,7 @@ Loaded ServerHostSettings:
   "NetworkVersionOverride": -1,
   "PersistenceVersionOverride": -1,
   "LanMode": false,
-  "LowerFPSWhenEmpty": true,
+  "LowerFPSWhenEmpty": false,
   "LowerFPSWhenEmptyValue": 1,
   "UseTeleportPlayersOutOfCollisionFix": true,
   "DiscoveryResponseLevel": 0,
@@ -330,7 +332,7 @@ ProjectM.Bootstrap:Unity.Entities.ICustomBootstrap.Initialize(String)
 Unity.Entities.DefaultWorldInitialization:Initialize(String, Boolean)
 Unity.Entities.AutomaticWorldBootstrap:Initialize()
 
-SteamPlatformSystem - Steam Info - AppID: 1604030, UserID: 76561199648137472, PersonaName: Noob, AppOwner: 76561199648137472
+SteamPlatformSystem - Steam Info - AppID: 1604030, UserID: 76561199648137472, PersonaName: Dee, AppOwner: 76561199648137472
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
 ProjectM.Auth.SteamPlatformSystem:TryInitClient(PlatformInitState&)
@@ -387,16 +389,32 @@ UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
 ProjectM.UI.UIEntryPoint:Awake()
 
-JsonReaderException: Additional text encountered after finished reading JSON content: {. Path '', line 14568, position 1.
-  at Newtonsoft.Json.JsonTextReader.Read () [0x00000] in <00000000000000000000000000000000>:0 
-  at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType, System.Boolean checkAdditionalContent) [0x00000] in <00000000000000000000000000000000>:0 
-  at Newtonsoft.Json.JsonSerializer.DeserializeInternal (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00000] in <00000000000000000000000000000000>:0 
-  at Newtonsoft.Json.JsonConvert.DeserializeObject (System.String value, System.Type type, Newtonsoft.Json.JsonSerializerSettings settings) [0x00000] in <00000000000000000000000000000000>:0 
-  at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value, Newtonsoft.Json.JsonSerializerSettings settings) [0x00000] in <00000000000000000000000000000000>:0 
-  at StunLocalization.LocalizationIO.ImportJson (System.String fileName, System.Collections.Generic.List`1[StunLocalization.LocalizationCode]& codes) [0x00000] in <00000000000000000000000000000000>:0 
-  at StunLocalization.Localization.LoadLocalization (System.String filePath) [0x00000] in <00000000000000000000000000000000>:0 
-  at StunLocalization.Localization.Initialize (StunLocalization.LocalizationSettings settings) [0x00000] in <00000000000000000000000000000000>:0 
-  at ProjectM.UI.InitializeUI.Awake () [0x00000] in <00000000000000000000000000000000>:0 
+Loaded Localization: Russian
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+System.Action`1:Invoke(T)
+ProjectM.UI.InitializeUI:Awake()
+
+ProjectM.GameDataSettings - Error while trying to load settings from file. File not Found! (C:/Games/V Rising/VRising_Data/StreamingAssets\Settings\GameDataSettings.json)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+ProjectM.Shared.SettingsBase:TryLoadJsonFile(String, Boolean, Boolean)
+ProjectM.Shared.SettingsBase:.ctor(String, Boolean, Boolean)
+ProjectM.GameDataSettings:.ctor()
+ProjectM.SettingsManager:VerifyGameDataSettings()
+ProjectM.SettingsManager:get_GameDataSettings()
+ProjectM.UI.InitializeUI:Awake()
+
+Load SubScene UI Scene
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.InitializeUI:Awake()
+
+[Default World] LoadSceneAsync Request 'SubScene_UI', WaitForSceneLoad: True, SceneEntity: 4:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.UI.InitializeUI:Awake()
 
 Server Info list downloaded!
 UnityEngine.Logger:Log(LogType, Object)
@@ -406,9 +424,9 @@ ProjectM.Auth.SteamPlatformSystem:OnUpdate()
 Unity.Entities.SystemBase:Update()
 Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
 Unity.Entities.ComponentSystem:Update()
-UnityEngine.DisplaysUpdatedDelegate:Invoke()
+UnityEngine.Events.UnityAction:Invoke()
 
-Loaded Servers Info List - Official: 1091, Trusted: 0, Banned: 1
+Loaded Servers Info List - Official: 1091, Trusted: 3, Banned: 0
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
 ProjectM.Auth.SteamPlatformSystem:UpdateOfficialServersList()
@@ -416,18 +434,3033 @@ ProjectM.Auth.SteamPlatformSystem:OnUpdate()
 Unity.Entities.SystemBase:Update()
 Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
 Unity.Entities.ComponentSystem:Update()
-UnityEngine.DisplaysUpdatedDelegate:Invoke()
+UnityEngine.Events.UnityAction:Invoke()
 
-Setting up 3 worker threads for Enlighten.
-  Thread -> id: 1e6c -> priority: 1 
-  Thread -> id: 1c88 -> priority: 1 
-  Thread -> id: 1754 -> priority: 1 
-[Default World] Disposing RuntimeConversion (with BlobAssetStore)
+[Default World] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 4:1 done!
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
-ProjectM.RuntimeConversionSystem:OnDestroy()
-Unity.Entities.World:DestroyAllSystemsAndLogException()
-Unity.Entities.World:Dispose()
-Unity.Entities.World:DisposeAllWorlds()
-Unity.Entities.DefaultWorldInitialization:DomainUnloadOrPlayModeChangeShutdown()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Type:MainMenuCanvasBase
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UISpawningSystem:<OnUpdate>b__4_0(Entity, SpawnUIPrefabOnLoad)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.UI.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.UI.UISpawningSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Instantiating Loaded UI Prefab. GameObject: MainMenuCanvas
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UISpawningSystem:<OnUpdate>b__4_0(Entity, SpawnUIPrefabOnLoad)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.UI.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.UI.UISpawningSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+DestroyInitialLoadUI - Looking for GameObjects with tag: InitialLoadUI)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+StunShared.UI.UIHelper:DestroyInitialLoadUI()
+UnityEngine.Object:Instantiate(T)
+StunShared.UI.UIHelper:InstantiateGameObject(GameObject)
+ProjectM.UI.UISpawningSystem:<OnUpdate>b__4_0(Entity, SpawnUIPrefabOnLoad)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.UI.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.UI.UISpawningSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+DestroyInitialLoadUI - Destroying: InitialLoad
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+StunShared.UI.UIHelper:DestroyInitialLoadUI()
+UnityEngine.Object:Instantiate(T)
+StunShared.UI.UIHelper:InstantiateGameObject(GameObject)
+ProjectM.UI.UISpawningSystem:<OnUpdate>b__4_0(Entity, SpawnUIPrefabOnLoad)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.UI.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.UI.UISpawningSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Default World] Found UICanvasBase, creating UICanvasSingleton.
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UISpawningSystem:<OnUpdate>b__4_0(Entity, SpawnUIPrefabOnLoad)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.UI.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.UI.UISpawningSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+StunAnalytics.Initialize called. Enabled: False
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<Initialize>d__33:MoveNext()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start(TStateMachine&)
+ProjectM.StunAnalytics:Initialize()
+ProjectM.UI.StartGameLoadMenuView:Update()
+
+Steam Launch CommandLine: -�:
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.StartGameLoadMenuView:Update()
+
+SteamPlatformSystem - RequestInternetServerList - AppId: 1604030, Filters: 8
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:RequestInternetServerList(RequestServerListOptions, Action`1, Action`1, InternetServerRequestType)
+ProjectM.UI.ServerListSystem:Refresh(Boolean, Boolean)
+ProjectM.UI.MainMenuNewView:InitialRefresh()
+ProjectM.UI.PlaySelectMenuView:JoinGuideButton_OnClick()
+UnityEngine.Events.UnityAction:Invoke()
+UnityEngine.Events.UnityEvent:Invoke()
+ProjectM.UI.SimpleStunButton:Press()
+ProjectM.UI.SimpleStunButton:OnPointerClick(PointerEventData)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+SteamPlatformSystem - RequestLANServerList - AppId: 1604030
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:RequestLANServerList(Action`1, Action`1)
+ProjectM.UI.ServerListSystem:Refresh(Boolean, Boolean)
+ProjectM.UI.MainMenuNewView:InitialRefresh()
+ProjectM.UI.PlaySelectMenuView:JoinGuideButton_OnClick()
+UnityEngine.Events.UnityAction:Invoke()
+UnityEngine.Events.UnityEvent:Invoke()
+ProjectM.UI.SimpleStunButton:Press()
+ProjectM.UI.SimpleStunButton:OnPointerClick(PointerEventData)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+SteamPlatformSystem - OnServerResponded - Handle: 1, Request: 1, iServer: 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnServerResponded(HServerListRequest, Int32)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnServerResponded(IntPtr, HServerListRequest, Int32)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - OnServerResponded - [0] NetAdr: 192.168.1.173:9876, Players: 0/40, Ping: 10, LastPlayed: 0, Tags: pvp,cs4,hc,ded, Name: (Dee Rising Server)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnServerResponded(HServerListRequest, Int32)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnServerResponded(IntPtr, HServerListRequest, Int32)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - OnRefreshComplete - Handle: 1, Response: eServerResponded, Server Count: 1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnRefreshComplete(HServerListRequest, EMatchMakingServerResponse)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnRefreshComplete(IntPtr, HServerListRequest, EMatchMakingServerResponse)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Initial1 Server Refresh Done (eServerResponded)!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.<>c__DisplayClass23_1:<Refresh>b__3(EMatchMakingServerResponse)
+UnityEngine.Events.UnityAction`1:Invoke(T0)
+ProjectM.Auth.SteamPlatformSystem:OnRefreshComplete(HServerListRequest, EMatchMakingServerResponse)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnRefreshComplete(IntPtr, HServerListRequest, EMatchMakingServerResponse)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - RequestInternetServerList - AppId: 1604030, Filters: 8
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:RequestInternetServerList(RequestServerListOptions, Action`1, Action`1, InternetServerRequestType)
+ProjectM.UI.<>c__DisplayClass23_1:<Refresh>b__3(EMatchMakingServerResponse)
+UnityEngine.Events.UnityAction`1:Invoke(T0)
+ProjectM.Auth.SteamPlatformSystem:OnRefreshComplete(HServerListRequest, EMatchMakingServerResponse)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnRefreshComplete(IntPtr, HServerListRequest, EMatchMakingServerResponse)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - OnServerResponded - Handle: 2, Request: 2, iServer: 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnServerResponded(HServerListRequest, Int32)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnServerResponded(IntPtr, HServerListRequest, Int32)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - OnServerResponded - [0] NetAdr: 192.168.1.173:9876, Players: 0/40, Ping: 10, LastPlayed: 0, Tags: pvp,cs4,hc,ded, Name: (Dee Rising Server)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnServerResponded(HServerListRequest, Int32)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnServerResponded(IntPtr, HServerListRequest, Int32)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - OnRefreshComplete - Handle: 2, Response: eServerResponded, Server Count: 1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnRefreshComplete(HServerListRequest, EMatchMakingServerResponse)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnRefreshComplete(IntPtr, HServerListRequest, EMatchMakingServerResponse)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+LAN Server Refresh Done (eServerResponded)!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.<>c:<Refresh>b__23_1(EMatchMakingServerResponse)
+UnityEngine.Events.UnityAction`1:Invoke(T0)
+ProjectM.Auth.SteamPlatformSystem:OnRefreshComplete(HServerListRequest, EMatchMakingServerResponse)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnRefreshComplete(IntPtr, HServerListRequest, EMatchMakingServerResponse)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - OnServerResponded - Handle: 3, Request: 3, iServer: 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnServerResponded(HServerListRequest, Int32)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnServerResponded(IntPtr, HServerListRequest, Int32)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - OnServerResponded - [0] NetAdr: 192.168.1.173:9876, Players: 0/40, Ping: 10, LastPlayed: 0, Tags: pvp,cs4,hc,ded, Name: (Dee Rising Server)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnServerResponded(HServerListRequest, Int32)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnServerResponded(IntPtr, HServerListRequest, Int32)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - OnRefreshComplete - Handle: 3, Response: eServerResponded, Server Count: 1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnRefreshComplete(HServerListRequest, EMatchMakingServerResponse)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnRefreshComplete(IntPtr, HServerListRequest, EMatchMakingServerResponse)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Initial2 Server Refresh Done (eServerResponded)!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.<>c__DisplayClass23_0:<Refresh>b__5(EMatchMakingServerResponse)
+UnityEngine.Events.UnityAction`1:Invoke(T0)
+ProjectM.Auth.SteamPlatformSystem:OnRefreshComplete(HServerListRequest, EMatchMakingServerResponse)
+Steamworks.ServerFailedToRespond:Invoke(HServerListRequest, Int32)
+Steamworks.ISteamMatchmakingServerListResponse:InternalOnRefreshComplete(IntPtr, HServerListRequest, EMatchMakingServerResponse)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+GetServerRules ...
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.PlayJoinMenuView:GetServerRules(UInt32, UInt16)
+ProjectM.UI.<>c__DisplayClass126_1:<Update>b__0(NewServerListEntryComponent)
+System.Action`1:Invoke(T)
+UnityEngine.Events.UnityAction:Invoke()
+UnityEngine.Events.UnityEvent:Invoke()
+ProjectM.UI.SimpleStunButton:Press()
+ProjectM.UI.SimpleStunButton:OnPointerClick(PointerEventData)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+OnRulesResponded - blood-bound-enabled = True
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.PlayJoinMenuView:OnRulesResponded(String, String)
+System.Action`2:Invoke(T1, T2)
+ProjectM.Auth.SteamPlatformSystem:OnRulesResponded(String, String)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+OnRulesResponded - castle-heart-damage-mode = CanBeDestroyedByPlayers
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.PlayJoinMenuView:OnRulesResponded(String, String)
+System.Action`2:Invoke(T1, T2)
+ProjectM.Auth.SteamPlatformSystem:OnRulesResponded(String, String)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+OnRulesResponded - game-settings-hash = 94c0dcdea9b76b496c0be74bde5dc9d9d621c111fe4ff42abeafcfe55e7b343c
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.PlayJoinMenuView:OnRulesResponded(String, String)
+System.Action`2:Invoke(T1, T2)
+ProjectM.Auth.SteamPlatformSystem:OnRulesResponded(String, String)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+OnRulesResponded - settings0 = AwAAAAAAAAAAAAAAAAAAAAAAAACgQAEMBAUAAAAAAAAAAAIAAAAAAwMAAAAABAQAAAAABQUAAAAABv4FAAAAAAAAAAAUAAAAABUyAAAAADNQAAAAAFGgAAAAAKH+
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.PlayJoinMenuView:OnRulesResponded(String, String)
+System.Action`2:Invoke(T1, T2)
+ProjectM.Auth.SteamPlatformSystem:OnRulesResponded(String, String)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+OnRulesResponded - settings1 = BAAAAAEeAwJQBQOWBwT6CQQAAAABAgICAwIEAjhkZjIJABEAChIAPAA8ADwAPAA8ADwAPAA8ADwAPAA8AEUAPAA8ADwAPAA8ADwAPAA8ADwAPAA8ADwAPEBOADwA
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.PlayJoinMenuView:OnRulesResponded(String, String)
+System.Action`2:Invoke(T1, T2)
+ProjectM.Auth.SteamPlatformSystem:OnRulesResponded(String, String)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+OnRulesResponded - days-runningv2 = 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.PlayJoinMenuView:OnRulesResponded(String, String)
+System.Action`2:Invoke(T1, T2)
+ProjectM.Auth.SteamPlatformSystem:OnRulesResponded(String, String)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+OnRulesResponded - settings2 = PJBegFMAPAA8ADwAPAA8ADoAPAA0ADwAPAA8ADwAPAA8ADwAPAA8ADwBAQABAgMAABIAFgASABYAEgAWABIAFgAAAgSbAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.PlayJoinMenuView:OnRulesResponded(String, String)
+System.Action`2:Invoke(T1, T2)
+ProjectM.Auth.SteamPlatformSystem:OnRulesResponded(String, String)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+OnRulesResponded - settings3 = AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.PlayJoinMenuView:OnRulesResponded(String, String)
+System.Action`2:Invoke(T1, T2)
+ProjectM.Auth.SteamPlatformSystem:OnRulesResponded(String, String)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 140)
+UnloadTime: 0.651400 ms
+Loaded Localization: Russian
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+System.Action`1:Invoke(T)
+ProjectM.UI.InitializeUI:Awake()
+
+Load SubScene UI Scene
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.InitializeUI:Awake()
+
+[Default World] LoadSceneAsync Request 'SubScene_UI', WaitForSceneLoad: True, SceneEntity: 4:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.UI.InitializeUI:Awake()
+
+
+Unloading 85 unused Assets to reduce memory usage. Loaded Objects now: 77532.
+Total: 84.003100 ms (FindLiveObjects: 2.993100 ms CreateObjectMapping: 7.339100 ms MarkObjects: 73.496700 ms  DeleteObjects: 0.173600 ms)
+
+Found GameConnect Data! ServerSaveName:  Protocol: SteamIPv4
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameBootstrap:Start()
+
+[FileUserList] Loaded FileUserList from: C:\Games\V Rising\VRising_Data\StreamingAssets\Settings\mutechatlist.txt, Added: 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.FileUserList:RefreshLocal(Boolean)
+ProjectM.FileUserList:.ctor(String, Single)
+ProjectM.MutePlayerSystem:.ctor()
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[])
+System.Activator:CreateInstance(Type, Boolean)
+Unity.Entities.World:AllocateSystemInternal(Type)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.CustomWorldSpawning:SetupWorldWithCustomRootGroups(World, World, WorldType, IEnumerable`1, Type, Type, Type)
+ProjectM.ClientWorldManager:CreateWorld(IReadOnlyList`1, Int32)
+ProjectM.ClientWorldManager:BeginCreateClientWorlds(Int32, Boolean)
+ProjectM.GameBootstrap:Start()
+
+Saved FileUserList (0) to: C:\Users\Dmytro\AppData\LocalLow\Stunlock Studios\VRising\Settings\mutechatlist.txt
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.FileUserList:Save()
+ProjectM.FileUserList:.ctor(String, Single)
+ProjectM.MutePlayerSystem:.ctor()
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[])
+System.Activator:CreateInstance(Type, Boolean)
+Unity.Entities.World:AllocateSystemInternal(Type)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.CustomWorldSpawning:SetupWorldWithCustomRootGroups(World, World, WorldType, IEnumerable`1, Type, Type, Type)
+ProjectM.ClientWorldManager:CreateWorld(IReadOnlyList`1, Int32)
+ProjectM.ClientWorldManager:BeginCreateClientWorlds(Int32, Boolean)
+ProjectM.GameBootstrap:Start()
+
+[FileUserList] Loaded FileUserList from: C:\Games\V Rising\VRising_Data\StreamingAssets\Settings\mutevoicelist.txt, Added: 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.FileUserList:RefreshLocal(Boolean)
+ProjectM.FileUserList:.ctor(String, Single)
+ProjectM.MutePlayerSystem:.ctor()
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[])
+System.Activator:CreateInstance(Type, Boolean)
+Unity.Entities.World:AllocateSystemInternal(Type)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.CustomWorldSpawning:SetupWorldWithCustomRootGroups(World, World, WorldType, IEnumerable`1, Type, Type, Type)
+ProjectM.ClientWorldManager:CreateWorld(IReadOnlyList`1, Int32)
+ProjectM.ClientWorldManager:BeginCreateClientWorlds(Int32, Boolean)
+ProjectM.GameBootstrap:Start()
+
+Saved FileUserList (0) to: C:\Users\Dmytro\AppData\LocalLow\Stunlock Studios\VRising\Settings\mutevoicelist.txt
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.FileUserList:Save()
+ProjectM.FileUserList:.ctor(String, Single)
+ProjectM.MutePlayerSystem:.ctor()
+System.Reflection.MonoCMethod:InternalInvoke(Object, Object[])
+System.Activator:CreateInstance(Type, Boolean)
+Unity.Entities.World:AllocateSystemInternal(Type)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.CustomWorldSpawning:SetupWorldWithCustomRootGroups(World, World, WorldType, IEnumerable`1, Type, Type, Type)
+ProjectM.ClientWorldManager:CreateWorld(IReadOnlyList`1, Int32)
+ProjectM.ClientWorldManager:BeginCreateClientWorlds(Int32, Boolean)
+ProjectM.GameBootstrap:Start()
+
+Vivox Client System Initialized
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.VivoxClientSystem:InitializeClient()
+ProjectM.VivoxClientSystem:OnCreate()
+Unity.Entities.ComponentSystemBase:CreateInstance(World, SystemState*)
+Unity.Entities.World:AddSystem_OnCreate_Internal(ComponentSystemBase)
+Unity.Entities.World:GetOrCreateSystemsAndLogException(IEnumerable`1, Int32)
+ProjectM.CustomWorldSpawning:AddSystemsToWorld(World, WorldType, Type[], Type, Type, Type, CustomWorld)
+ProjectM.CustomWorldSpawning:SetupWorldWithCustomRootGroups(World, World, WorldType, IEnumerable`1, Type, Type, Type)
+ProjectM.ClientWorldManager:CreateWorld(IReadOnlyList`1, Int32)
+ProjectM.ClientWorldManager:BeginCreateClientWorlds(Int32, Boolean)
+ProjectM.GameBootstrap:Start()
+
+[Client_0] LoadSceneAsync Request 'WorldAssetSingleton', WaitForSceneLoad: True, SceneEntity: 283:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.Terrain.WorldBehaviour:SetupTerrain(World, LoadToTargetWorld, Boolean, Boolean)
+ProjectM.ClientBootstrapSystem:BeginSetupClient(GameBootstrap)
+ProjectM.ClientWorldManager:CreateWorld(IReadOnlyList`1, Int32)
+ProjectM.ClientWorldManager:BeginCreateClientWorlds(Int32, Boolean)
+ProjectM.GameBootstrap:Start()
+
+Found GameConnect Data! Address: SteamIPv4://192.168.1.173:9876 ServerSaveName: 
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.ClientWorldManager:BeginCreateClientWorlds(Int32, Boolean)
+ProjectM.GameBootstrap:Start()
+
+SteamPlatformSystem - Getting Auth Session Ticket!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:GetAuthSessionTicket(Boolean, Action`4)
+ProjectM.ClientWorldManager:BeginCreateClientWorlds(Int32, Boolean)
+ProjectM.GameBootstrap:Start()
+
+Hybrid Renderer V2 active, MaterialProperty component type count 64 / 128
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Unity.Rendering.HybridRendererSystem:UpdateHybridV2Batches(JobHandle)
+Unity.Rendering.HybridRendererSystem:OnUpdate(JobHandle)
+Unity.Entities.JobComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientPresentationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Default World] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 4:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SteamPlatformSystem - OnGetAuthSessionTicketResponse - Result: k_EResultOK
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:OnGetAuthSessionTicketResponse(GetAuthSessionTicketResponse_t)
+Steamworks.DispatchDelegate:Invoke(T)
+Steamworks.Callback`1:OnRunCallback(IntPtr)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Creating NetClient.
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.ClientBootstrapSystem:CreateNetClient(ConnectAddress)
+ProjectM.ClientBootstrapSystem:Connect(ConnectAddress, UInt64, Byte[], String)
+ProjectM.<>c__DisplayClass11_1:<BeginCreateClientWorlds>b__0(Boolean, EResult, Byte[], CSteamID)
+System.Action`4:Invoke(T1, T2, T3, T4)
+ProjectM.Auth.SteamPlatformSystem:OnGetAuthSessionTicketResponse(GetAuthSessionTicketResponse_t)
+Steamworks.DispatchDelegate:Invoke(T)
+Steamworks.Callback`1:OnRunCallback(IntPtr)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+ClientSteamTransport.Connect - ConnectData: Stunlock.Network.ClientConnectData, Current ConnectionStatus = k_ESteamNetworkingConnectionState_None
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Stunlock.Network.Steam.ClientSteamTransportLayer:Connect(ClientConnectData)
+Stunlock.Network.ClientNetworkLayer:Connect(ClientConnectData, NetBufferOut&)
+ProjectM.ClientBootstrapSystem:UpdateConnectRequest()
+ProjectM.ClientBootstrapSystem:Connect(ConnectAddress, UInt64, Byte[], String)
+ProjectM.<>c__DisplayClass11_1:<BeginCreateClientWorlds>b__0(Boolean, EResult, Byte[], CSteamID)
+System.Action`4:Invoke(T1, T2, T3, T4)
+ProjectM.Auth.SteamPlatformSystem:OnGetAuthSessionTicketResponse(GetAuthSessionTicketResponse_t)
+Steamworks.DispatchDelegate:Invoke(T)
+Steamworks.Callback`1:OnRunCallback(IntPtr)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Connecting via SteamIPv4 - ConnectAddress SteamIPv4://192.168.1.173:9876
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Stunlock.Network.Steam.ClientSteamTransportLayer:Connect(ClientConnectData)
+Stunlock.Network.ClientNetworkLayer:Connect(ClientConnectData, NetBufferOut&)
+ProjectM.ClientBootstrapSystem:UpdateConnectRequest()
+ProjectM.ClientBootstrapSystem:Connect(ConnectAddress, UInt64, Byte[], String)
+ProjectM.<>c__DisplayClass11_1:<BeginCreateClientWorlds>b__0(Boolean, EResult, Byte[], CSteamID)
+System.Action`4:Invoke(T1, T2, T3, T4)
+ProjectM.Auth.SteamPlatformSystem:OnGetAuthSessionTicketResponse(GetAuthSessionTicketResponse_t)
+Steamworks.DispatchDelegate:Invoke(T)
+Steamworks.Callback`1:OnRunCallback(IntPtr)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Connecting to: SteamIPv4://192.168.1.173:9876
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.ClientBootstrapSystem:UpdateConnectRequest()
+ProjectM.ClientBootstrapSystem:Connect(ConnectAddress, UInt64, Byte[], String)
+ProjectM.<>c__DisplayClass11_1:<BeginCreateClientWorlds>b__0(Boolean, EResult, Byte[], CSteamID)
+System.Action`4:Invoke(T1, T2, T3, T4)
+ProjectM.Auth.SteamPlatformSystem:OnGetAuthSessionTicketResponse(GetAuthSessionTicketResponse_t)
+Steamworks.DispatchDelegate:Invoke(T)
+Steamworks.Callback`1:OnRunCallback(IntPtr)
+Steamworks.CallbackDispatcher:RunFrame(Boolean)
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+SteamNetworking - SteamNetConnections.ConnectionUpdate: k_ESteamNetworkingConnectionState_Connected, 1, 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Stunlock.Network.Steam.Wrapper.SteamNetConnections:HandleNewUpdate(SteamNetConnectionStatusChangedCallback_t)
+Stunlock.Network.Steam.Wrapper.SteamNetConnections:DoUpdate()
+Stunlock.Network.Steam.Wrapper.SteamSocketNetworking:Update(Boolean, Boolean)
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+ClientSteamTransport.OnStatusChanged - status = k_ESteamNetworkingConnectionState_Connected (3) previous_status = k_ESteamNetworkingConnectionState_None (0), Connection = 1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Stunlock.Network.Steam.ClientSteamTransportLayer:OnStatusChanged(SteamNetConnectionStatusChangedCallback_t)
+Stunlock.Network.Steam.ClientSteamTransportLayer:Update(Double)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Client: Connected HailMessageSize: 315
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.ClientBootstrapSystem:OnClientConnected(NetBufferIn&)
+Stunlock.Network.ClientLoadingDataDelegate:Invoke(NetBufferIn&)
+Stunlock.Network.ClientLoadingDataDelegate:Invoke(NetBufferIn&)
+Stunlock.Network.Steam.ClientSteamTransportLayer:OnDataReceived(NetMessage)
+Stunlock.Network.Steam.ClientSteamTransportLayer:Update(Double)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Created ConnectionString (26): AlsDUIEpTQi2YoBcAgBgAipNAA from Primary SteamIPv4://192.168.1.173:9876, Secondary SteamP2P://85568397990965595, QueryPort 9877
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Client created GameBalanceSettings
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneAsync Request 'HudSubScene', WaitForSceneLoad: True, SceneEntity: 297:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneAsync Request '295c92b7a799a3443b40e9ef192b5727', WaitForSceneLoad: True, SceneEntity: 300:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loading GameData SubScene 295c92b7a799a3443b40e9ef192b5727, GameData Scene Entity: Entity(300:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneAsync Request '8137c0edd53365b40acb48df81e07046', WaitForSceneLoad: True, SceneEntity: 302:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loading GameData SubScene 8137c0edd53365b40acb48df81e07046, GameData Scene Entity: Entity(302:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneAsync Request '153b723300728974d8e2bad70c3fd1f2', WaitForSceneLoad: True, SceneEntity: 304:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loading GameData SubScene 153b723300728974d8e2bad70c3fd1f2, GameData Scene Entity: Entity(304:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneAsync Request '3429e7b0ff91dfa4db4318bcdb0e63bc', WaitForSceneLoad: True, SceneEntity: 306:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loading GameData SubScene 3429e7b0ff91dfa4db4318bcdb0e63bc, GameData Scene Entity: Entity(306:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneAsync Request '4361b3a547128724892dae4688ec7146', WaitForSceneLoad: True, SceneEntity: 308:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loading GameData SubScene 4361b3a547128724892dae4688ec7146, GameData Scene Entity: Entity(308:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneAsync Request 'b2f35358da120c04c92b9256f40d76ce', WaitForSceneLoad: True, SceneEntity: 310:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loading GameData SubScene b2f35358da120c04c92b9256f40d76ce, GameData Scene Entity: Entity(310:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneAsync Request '15d43071abc10d14095aa6f046142706', WaitForSceneLoad: True, SceneEntity: 312:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loading GameData SubScene 15d43071abc10d14095aa6f046142706, GameData Scene Entity: Entity(312:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameDataSubSceneSystem:LoadGameDataSubSceneAsync(SubScene, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneAsync Request 'WorldMap', WaitForSceneLoad: True, SceneEntity: 314:1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.SceneLoadSystem:LoadSceneAsync(SubScene, String, Boolean, LoadToTargetWorld, LoadParameters)
+ProjectM.ClientBootstrapSystem:FinalizeSetupClient()
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(StatusChangedEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClientBootstrapSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 283:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] World Asset Initialized
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldInitializationSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 297:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Type:UICanvasBase
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UISpawningSystem:<OnUpdate>b__4_0(Entity, SpawnUIPrefabOnLoad)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.UI.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.UI.UISpawningSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Instantiating Loaded UI Prefab. GameObject: HUDCanvas
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UISpawningSystem:<OnUpdate>b__4_0(Entity, SpawnUIPrefabOnLoad)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.UI.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.UI.UISpawningSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Found UICanvasBase, creating UICanvasSingleton.
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.UISpawningSystem:<OnUpdate>b__4_0(Entity, SpawnUIPrefabOnLoad)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.UI.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.UI.UISpawningSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 314:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 12)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 12)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 12)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 12)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 12)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 10)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 10)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 10)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 10)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 10)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 8)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 8)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 8)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 8)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 8)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Unity.Jobs.ExecuteJobFunction:Invoke(T&, IntPtr, IntPtr, JobRanges&, Int32)
+
+[ line -75501224]
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 312:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Removing SceneTags from GameData Scene Entity Entity(312:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:OriginalLambdaBody(Entity, DynamicBuffer`1&)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.GameDataSubSceneSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 1 Prefab Collections in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 895 Prefabs in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 300:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Removing SceneTags from GameData Scene Entity Entity(300:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:OriginalLambdaBody(Entity, DynamicBuffer`1&)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.GameDataSubSceneSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 1 Prefab Collections in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 7140 Prefabs in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 306:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Removing SceneTags from GameData Scene Entity Entity(306:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:OriginalLambdaBody(Entity, DynamicBuffer`1&)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.GameDataSubSceneSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 1 Prefab Collections in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 895 Prefabs in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 308:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Removing SceneTags from GameData Scene Entity Entity(308:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:OriginalLambdaBody(Entity, DynamicBuffer`1&)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.GameDataSubSceneSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 1 Prefab Collections in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 233 Prefabs in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 304:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Removing SceneTags from GameData Scene Entity Entity(304:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:OriginalLambdaBody(Entity, DynamicBuffer`1&)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.GameDataSubSceneSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 1 Prefab Collections in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 2260 Prefabs in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Still waiting for world startup after 0,5 mins. GameDataInitialized: False ChunkDatabaseInitialized: False, WaitingForChunksToLoadOnStartupCount: 0, Active RequestSceneLoaded entities: 20
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadStartupTracker:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 302:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Removing SceneTags from GameData Scene Entity Entity(302:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:OriginalLambdaBody(Entity, DynamicBuffer`1&)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.GameDataSubSceneSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 1 Prefab Collections in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 727 Prefabs in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] LoadSceneSystem.WaitForTargetSceneLoad - SceneEntity 310:1 done!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:OriginalLambdaBody(Entity, WaitForTargetSceneLoad&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:IterateEntities(ArchetypeChunk&, Runtimes&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob0:Execute(ArchetypeChunk, Int32, Int32)
+Unity.Entities.JobChunkExtensions:RunWithoutJobs(T&, ArchetypeChunkIterator&)
+ProjectM.Pathfinding.RunWithoutJobSystem_00000043$PostfixBurstDelegate:Invoke(ArchetypeChunkIterator*, Void*)
+Unity.Entities.InternalCompilerInterface:RunJobChunk(T&, EntityQuery, JobChunkRunWithoutJobSystemDelegate)
+ProjectM.SceneLoadSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Removing SceneTags from GameData Scene Entity Entity(310:1)
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:OriginalLambdaBody(Entity, DynamicBuffer`1&)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_RemoveSceneTagOnGameDataSceneLoad:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.GameDataSubSceneSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] GameData Initialized. All 7 GameData Scenes Loaded.
+#0: Entity(1716:1)  - Entity  - LocalToWorld  - Rotation  - Translation  - LinkedEntityGroup [B]  - EntityNameCollectionBuffer [B]  - PrefabCollectionBuffer [B]  - Prefab  - PrefabCollectionTag  - Initialized
+#1: Entity(10306:1)  - Entity  - LocalToWorld  - Rotation  - Translation  - LinkedEntityGroup [B]  - EntityNameCollectionBuffer [B]  - PrefabCollectionBuffer [B]  - Prefab  - PrefabCollectionTag  - Initialized
+#2: Entity(21304:2)  - Entity  - LocalToWorld  - Rotation  - Translation  - LinkedEntityGroup [B]  - EntityNameCollectionBuffer [B]  - PrefabCollectionBuffer [B]  - Prefab  - PrefabCollectionTag  - Initialized
+#3: Entity(20780:3)  - Entity  - LocalToWorld  - Rotation  - Translation  - LinkedEntityGroup [B]  - EntityNameCollectionBuffer [B]  - PrefabCollectionBuffer [B]  - Prefab  - PrefabCollectionTag  - Initialized
+#4: Entity(7010:2)  - Entity  - LocalToWorld  - Rotation  - Translation  - LinkedEntityGroup [B]  - EntityNameCollectionBuffer [B]  - PrefabCollectionBuffer [B]  - Prefab  - PrefabCollectionTag  - Initialized
+#5: Entity(38097:1)  - Entity  - LocalToWorld  - Rotation  - Translation  - LinkedEntityGroup [B]  - EntityNameCollectionBuffer [B]  - PrefabCollectionBuffer [B]  - Prefab  - PrefabCollectionTag  - Initialized
+#6: Entity(44551:1)  - Entity  - LocalToWorld  - Rotation  - Translation  - LinkedEntityGroup [B]  - EntityNameCollectionBuffer [B]  - PrefabCollectionBuffer [B]  - Prefab  - PrefabCollectionTag
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GameDataManager:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 1 Prefab Collections in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client_0] Registering 2749 Prefabs in PrefabCollectionSystem
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PrefabCollectionSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Couldn't assign camera TopDownCamera to LocalUser
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.LocalUserSystem:TryAssignCameraToLocalUser()
+ProjectM.LocalUserSystem:UpdateCamera()
+ProjectM.LocalUserSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Created Camera TopDownCamera
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.LocalUserSystem:UpdateCamera()
+ProjectM.LocalUserSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+CharacterCreationScreen (1) - Awake
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Object:Instantiate(Object, Transform, Boolean)
+UnityEngine.Object:Instantiate(T, Transform, Boolean)
+StunShared.UI.UIHelper:InstantiatePrefabUnderAnchor(T, RectTransform)
+ProjectM.UI.<>c__DisplayClass9_0:<OnUpdate>b__1(Entity, OpenMenuEvent&)
+Unity.Entities.F_EC`1:Invoke(Entity, T0)
+Unity.Entities.EntityQueryBuilder:ForEach(F_ED`1)
+ProjectM.UI.OpenHUDMenuSystem:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientInitializationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Assigned Camera TopDownCamera to LocalUser
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.LocalUserSystem:TryAssignCameraToLocalUser()
+ProjectM.LocalUserSystem:MakeLocalUserAndAssignCamera(Entity)
+ProjectM.LocalUserSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Client received a Claimed Achievements sync event! With length: 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob1:OriginalLambdaBody(Entity, ClaimedAchievementsEvent&)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob1:PerformLambda(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.PerformLambdaDelegate:Invoke(Void*, Void*, Entity)
+Unity.Entities.CodeGeneratedJobForEach.StructuralChangeEntityProvider:IterateEntities(Void*, Void*, PerformLambdaDelegate)
+ProjectM.<>c__DisplayClass_OnUpdate_LambdaJob1:Execute(ComponentSystemBase, EntityQuery)
+ProjectM.ClaimedAchievementsClientSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+ -- CharacterCreationMenuMapper - OnStartRunning!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.CharacterCreationMenuMapper:OnStartRunning()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientPresentationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:41:24
+[Client FPS] Average: 28, median: 44, min: 0, max: 50
+[Server FPS] Average: 20, median: 30, min: 0, max: 31
+[Client SLS frametime ms] Average: 4.912972, median: 3.3707, min: 0, max: 579.8697
+[Latency ms] Average: 6, median: 10, min: 0, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 28, median: 46, min: 0, max: 49
+[Network messages/s received] Average: 25, median: 30, min: 0, max: 80
+[Network messages max bytes/s sent] Average: 174, median: 241, min: 0, max: 349
+[Network messages max bytes/s received] Average: 248, median: 76, min: 0, max: 8218
+[Sound CPU usage] Average: 0.9513054, median: 1.282843, min: 0, max: 2.432406 ms
+[Sound memory usage] Average: 210, median: 316, min: 0, max: 316 mb
+[Hybrid models active] Average: 0, median: 0, min: 0, max: 0
+[Hour of day] 17
+[Memory mb] Average: 1775
+[Client entity counts] Enabled: 841, disabled: 0, total: 841
+[Server entity counts] Enabled: 38538, disabled: 311545, total: 350083
+[Archetype count] 5175
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+SEND EVENT!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.CharacterCreationMenuMapper:CreateButton_OnClick()
+UnityEngine.Events.UnityAction:Invoke()
+UnityEngine.Events.UnityEvent:Invoke()
+ProjectM.UI.SimpleStunButton:Press()
+ProjectM.UI.SimpleStunButton:OnPointerClick(PointerEventData)
+System.ComponentModel.ListChangedEventHandler:Invoke(Object, ListChangedEventArgs)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ReleaseMouse(PointerEventData, GameObject)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+
+[Client] Request Load Chunk 4,0, SceneType 1, GUID: 672ca7a93fee20b46a9c7d87ff39a4c8
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 5,0, SceneType 1, GUID: 672ca7a93fee20b46a9c7d87ff39a4c8
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Loaded Chunk 4,0, SceneType 1
+[Client] Loaded Chunk 5,0, SceneType 1
+[Client] Request Load Chunk 14,1, SceneType 1, GUID: a32a1d347a4b31d4c90744a4ede6acc5
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Loaded Chunk 14,1, SceneType 1
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:43:24
+[Client FPS] Average: 49, median: 50, min: 45, max: 51
+[Server FPS] Average: 30, median: 30, min: 29, max: 31
+[Client SLS frametime ms] Average: 5.764166, median: 5.0091, min: 4.0097, max: 54.5521
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 48, median: 50, min: 44, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 250, median: 250, min: 195, max: 303
+[Network messages max bytes/s received] Average: 220, median: 146, min: 109, max: 649
+[Sound CPU usage] Average: 4.824236, median: 4.86207, min: 3.801983, max: 5.761353 ms
+[Sound memory usage] Average: 317, median: 317, min: 317, max: 317 mb
+[Hybrid models active] Average: 1, median: 1, min: 1, max: 1
+[Hour of day] 19
+[Memory mb] Average: 1829
+[Client entity counts] Enabled: 20477, disabled: 0, total: 20477
+[Server entity counts] Enabled: 38786, disabled: 311339, total: 350125
+[Archetype count] 5887
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:45:24
+[Client FPS] Average: 47, median: 50, min: 31, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 6.40027, median: 5.518, min: 4.0103, max: 31.4213
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 46, median: 50, min: 20, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 20, max: 46
+[Network messages max bytes/s sent] Average: 250, median: 250, min: 241, max: 311
+[Network messages max bytes/s received] Average: 327, median: 397, min: 126, max: 1000
+[Sound CPU usage] Average: 4.74088, median: 4.767454, min: 3.425795, max: 6.810335 ms
+[Sound memory usage] Average: 316, median: 316, min: 316, max: 317 mb
+[Hybrid models active] Average: 4, median: 2, min: 1, max: 9
+[Hour of day] 22
+[Memory mb] Average: 1844
+[Client entity counts] Enabled: 21379, disabled: 445, total: 21824
+[Server entity counts] Enabled: 39472, disabled: 310759, total: 350231
+[Archetype count] 6176
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 13,1, SceneType 1, GUID: 3b35dfc3f24e9bb45b6da67f70a87fbd
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Loaded Chunk 13,1, SceneType 1
+Reinstantiating all spawned models
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.GraphicsSettingsManager:TryApplyGameSettings(GraphicsSettings, Boolean)
+ProjectM.UI.OptionsPanel_Graphics:OnDisable()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:47:24
+[Client FPS] Average: 49, median: 49, min: 48, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 5.878424, median: 5.3653, min: 4.4499, max: 22.0176
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 49, min: 48, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 247, median: 241, min: 241, max: 295
+[Network messages max bytes/s received] Average: 656, median: 608, min: 593, max: 996
+[Sound CPU usage] Average: 5.118362, median: 5.089781, min: 4.296751, max: 6.264366 ms
+[Sound memory usage] Average: 317, median: 317, min: 317, max: 317 mb
+[Hybrid models active] Average: 13, median: 14, min: 1, max: 14
+[Hour of day] 1
+[Memory mb] Average: 1864
+[Client entity counts] Enabled: 23832, disabled: 596, total: 24428
+[Server entity counts] Enabled: 40413, disabled: 309890, total: 350303
+[Archetype count] 6403
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:49:24
+[Client FPS] Average: 50, median: 50, min: 49, max: 51
+[Server FPS] Average: 30, median: 31, min: 30, max: 31
+[Client SLS frametime ms] Average: 6.506035, median: 6.181, min: 5.0412, max: 16.2503
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 49, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 251, median: 252, min: 241, max: 255
+[Network messages max bytes/s received] Average: 910, median: 936, min: 742, max: 998
+[Sound CPU usage] Average: 6.658669, median: 6.608373, min: 5.621524, max: 8.06461 ms
+[Sound memory usage] Average: 317, median: 317, min: 317, max: 317 mb
+[Hybrid models active] Average: 19, median: 19, min: 19, max: 20
+[Hour of day] 3
+[Memory mb] Average: 1861
+[Client entity counts] Enabled: 24689, disabled: 445, total: 25134
+[Server entity counts] Enabled: 41006, disabled: 309347, total: 350353
+[Archetype count] 6551
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 14,2, SceneType 1, GUID: c5d45555f3d519943a0e80adc9ff4f51
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Loaded Chunk 14,2, SceneType 1
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:51:24
+[Client FPS] Average: 49, median: 50, min: 48, max: 50
+[Server FPS] Average: 30, median: 30, min: 30, max: 30
+[Client SLS frametime ms] Average: 6.54931, median: 6.4239, min: 5.1876, max: 12.816
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 48, median: 49, min: 48, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 30, max: 30
+[Network messages max bytes/s sent] Average: 241, median: 241, min: 241, max: 241
+[Network messages max bytes/s received] Average: 735, median: 703, min: 665, max: 984
+[Sound CPU usage] Average: 5.453686, median: 5.507296, min: 4.632284, max: 6.518259 ms
+[Sound memory usage] Average: 317, median: 317, min: 317, max: 318 mb
+[Hybrid models active] Average: 17, median: 17, min: 17, max: 18
+[Hour of day] 6
+[Memory mb] Average: 1884
+[Client entity counts] Enabled: 30959, disabled: 505, total: 31464
+[Server entity counts] Enabled: 40306, disabled: 309037, total: 349343
+[Archetype count] 6656
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:53:24
+[Client FPS] Average: 49, median: 50, min: 48, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 6.475375, median: 6.0947, min: 5.3837, max: 22.9569
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 48, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 227, median: 241, min: 187, max: 241
+[Network messages max bytes/s received] Average: 648, median: 651, min: 622, max: 689
+[Sound CPU usage] Average: 6.153729, median: 6.020265, min: 5.267312, max: 7.385219 ms
+[Sound memory usage] Average: 317, median: 318, min: 317, max: 318 mb
+[Hybrid models active] Average: 25, median: 26, min: 25, max: 26
+[Hour of day] 9
+[Memory mb] Average: 1894
+[Client entity counts] Enabled: 31495, disabled: 916, total: 32411
+[Server entity counts] Enabled: 40495, disabled: 308865, total: 349360
+[Archetype count] 6745
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Server Info list downloaded!
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:UpdateOfficialServersList()
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Loaded Servers Info List - Official: 1091, Trusted: 3, Banned: 0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Auth.SteamPlatformSystem:UpdateOfficialServersList()
+ProjectM.Auth.SteamPlatformSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 13,2, SceneType 1, GUID: 5dd2d5dbc5240404ab98da395aa11c1f
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Loaded Chunk 13,2, SceneType 1
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:55:24
+[Client FPS] Average: 49, median: 50, min: 47, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 30
+[Client SLS frametime ms] Average: 7.225071, median: 6.7238, min: 5.4278, max: 19.4677
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 48, median: 49, min: 46, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 30, max: 31
+[Network messages max bytes/s sent] Average: 251, median: 250, min: 241, max: 258
+[Network messages max bytes/s received] Average: 802, median: 736, min: 650, max: 997
+[Sound CPU usage] Average: 6.551401, median: 6.382068, min: 5.322377, max: 8.753716 ms
+[Sound memory usage] Average: 318, median: 318, min: 318, max: 318 mb
+[Hybrid models active] Average: 20, median: 25, min: 16, max: 25
+[Hour of day] 11
+[Memory mb] Average: 1907
+[Client entity counts] Enabled: 37348, disabled: 2306, total: 39654
+[Server entity counts] Enabled: 40230, disabled: 309255, total: 349485
+[Archetype count] 6816
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:57:24
+[Client FPS] Average: 49, median: 50, min: 48, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 7.05773, median: 6.6272, min: 5.2675, max: 21.2396
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 49, min: 47, max: 51
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 248, median: 250, min: 241, max: 258
+[Network messages max bytes/s received] Average: 716, median: 655, min: 542, max: 1000
+[Sound CPU usage] Average: 6.14057, median: 6.223465, min: 4.683666, max: 7.96029 ms
+[Sound memory usage] Average: 317, median: 318, min: 317, max: 318 mb
+[Hybrid models active] Average: 13, median: 14, min: 12, max: 14
+[Hour of day] 14
+[Memory mb] Average: 1911
+[Client entity counts] Enabled: 37286, disabled: 2331, total: 39617
+[Server entity counts] Enabled: 39766, disabled: 309211, total: 348977
+[Archetype count] 6826
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Default Scale Set for Wilderness: 0,1985294
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.MapMenuMapper:GetZoneOffsetAndScale(WorldZone, Single)
+ProjectM.UI.MapMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientPresentationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 8,8, SceneType 1, GUID: 246501a0fbb9b7c4da29aa602ea5c4fa
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 7,8, SceneType 1, GUID: 0a2fb7d5434b2154fa9f4c1197b74eaf
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 4,0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 13,2
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Unloaded Chunk 4,0. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Unloaded Chunk 13,2. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Loaded Chunk 7,8, SceneType 1
+[Client] Loaded Chunk 8,8, SceneType 1
+Performance summary for last 600 frames:
+[Time] 17.03.2023 17:59:24
+[Client FPS] Average: 46, median: 49, min: 22, max: 50
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 9.013712, median: 7.5167, min: 5.772, max: 485.3185
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 47, median: 49, min: 31, max: 50
+[Network messages/s received] Average: 31, median: 30, min: 30, max: 38
+[Network messages max bytes/s sent] Average: 251, median: 250, min: 241, max: 258
+[Network messages max bytes/s received] Average: 783, median: 769, min: 548, max: 1000
+[Sound CPU usage] Average: 7.419977, median: 7.451367, min: 5.273092, max: 10.5189 ms
+[Sound memory usage] Average: 317, median: 318, min: 317, max: 319 mb
+[Hybrid models active] Average: 14, median: 13, min: 11, max: 24
+[Hour of day] 17
+[Memory mb] Average: 1923
+[Client entity counts] Enabled: 37401, disabled: 5944, total: 43345
+[Server entity counts] Enabled: 40445, disabled: 308898, total: 349343
+[Archetype count] 6912
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 9,8, SceneType 1, GUID: e4f944b1bfd210f4b88f2a790649d59a
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 13,1
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Unloaded Chunk 13,1. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Loaded Chunk 9,8, SceneType 1
+[Client] Request Load Chunk 8,9, SceneType 1, GUID: 24ef0792343cd704bb2a35f3894100de
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Load Chunk 9,9, SceneType 1, GUID: 05408f93d0bd1574f932005a5e4ab8c9
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.TerrainManager:TryLoadScene(LoadTerrainChunkRequest, Boolean, Boolean&, Boolean)
+ProjectM.Terrain.TerrainManager:TryLoadChunk(TerrainChunk, Boolean)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 5,0
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Request Unload Chunk 14,2
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.Terrain.WorldLoadingManagerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+[Client] Unloaded Chunk 5,0. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Unloaded Chunk 14,2. SceneType ProjectM.Terrain.ChunkSceneType
+[Client] Loaded Chunk 8,9, SceneType 1
+[Client] Loaded Chunk 9,9, SceneType 1
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:01:24
+[Client FPS] Average: 49, median: 50, min: 48, max: 50
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 6.85113, median: 6.4018, min: 5.2752, max: 19.3338
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 48, max: 51
+[Network messages/s received] Average: 30, median: 31, min: 29, max: 32
+[Network messages max bytes/s sent] Average: 254, median: 250, min: 243, max: 307
+[Network messages max bytes/s received] Average: 891, median: 989, min: 637, max: 1000
+[Sound CPU usage] Average: 5.932086, median: 5.885113, min: 4.499274, max: 8.000625 ms
+[Sound memory usage] Average: 317, median: 318, min: 317, max: 318 mb
+[Hybrid models active] Average: 5, median: 6, min: 3, max: 6
+[Hour of day] 19
+[Memory mb] Average: 1940
+[Client entity counts] Enabled: 47544, disabled: 11809, total: 59353
+[Server entity counts] Enabled: 41582, disabled: 308098, total: 349680
+[Archetype count] 7217
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Default Scale Set for Wilderness: 0,1985294
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.UI.MapMenuMapper:GetZoneOffsetAndScale(WorldZone, Single)
+ProjectM.UI.MapMenuMapper:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientPresentationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
+
+Performance summary for last 600 frames:
+[Time] 17.03.2023 18:03:24
+[Client FPS] Average: 49, median: 50, min: 49, max: 51
+[Server FPS] Average: 30, median: 30, min: 30, max: 31
+[Client SLS frametime ms] Average: 6.629241, median: 6.1745, min: 5.3238, max: 18.0613
+[Latency ms] Average: 10, median: 10, min: 10, max: 10
+[Network b/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network b/s received] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s sent] Average: 0, median: 0, min: 0, max: 0
+[Network packets/s received] Average: 0, median: 0, min: 0, max: 0
+[Network messages/s sent] Average: 49, median: 50, min: 49, max: 50
+[Network messages/s received] Average: 30, median: 30, min: 29, max: 31
+[Network messages max bytes/s sent] Average: 244, median: 241, min: 241, max: 250
+[Network messages max bytes/s received] Average: 646, median: 622, min: 537, max: 886
+[Sound CPU usage] Average: 5.450917, median: 5.448512, min: 4.448765, max: 6.453604 ms
+[Sound memory usage] Average: 317, median: 318, min: 317, max: 318 mb
+[Hybrid models active] Average: 6, median: 7, min: 5, max: 7
+[Hour of day] 22
+[Memory mb] Average: 1956
+[Client entity counts] Enabled: 47073, disabled: 14072, total: 61145
+[Server entity counts] Enabled: 41912, disabled: 308287, total: 350199
+[Archetype count] 7413
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ProjectM.PerformanceLoggerSystem:OnUpdate()
+Unity.Entities.SystemBase:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+ProjectM.ClientSimulationSystemGroup:OnUpdate()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+Unity.Entities.ComponentSystemGroup:UpdateAllSystems()
+Unity.Entities.ComponentSystem:Update()
+UnityEngine.Events.UnityAction:Invoke()
 
